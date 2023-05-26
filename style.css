@@ -1,0 +1,30 @@
+/* GENERAL */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+  body {
+    box-sizing: border-box;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 75em;
+    min-height: 100vh;
+    font-family: 'Kumbh', sans-serif;
+  }
+
+  main {
+    background-color: white;
+    border-radius: 25px;
+    padding: 2em;
+    display: flex;
+  }
+
+  
+/* IMAGE */
+
+
+
+/* ACCORDION */
