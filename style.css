@@ -10,21 +10,139 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 75em;
+    max-width: 52em;
     min-height: 100vh;
-    font-family: 'Kumbh', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
   }
 
   main {
     background-color: white;
     border-radius: 25px;
-    padding: 2em;
     display: flex;
+    width: 56.5em;
+    max-height: 31.5em;
+    box-shadow: 0px 50px 100px -50px hsl(238, 29%, 16%);
+  }
+  
+
+  hr {
+    border-width: 0;
+    height: 1px;
+    color: hsl(240, 5%, 91%);
+    background-color: hsl(240, 5%, 91%);
+    margin: 1.25em 0 1.25em 0; 
+  }
+  
+  h1 {
+    margin-bottom: 1.5em;
   }
 
-  
+  p {
+    margin-bottom: 0;
+  }
+
 /* IMAGE */
+
+.main_pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 45em;
+  height: auto;
+  padding-right: 1em;
+ }
+
+.main_pictures--woman {
+  position: absolute;
+  z-index: 2;
+  margin-left: -110px;
+}
+
+.main_pictures--woman img {
+  height: 350px;
+  width: auto;
+}
+
+.main_pictures--shadow {
+  position: absolute;
+  z-index: 1;
+  margin-left: -610px;
+  margin-top: -145px;
+}
 
 
 
 /* ACCORDION */
+
+  /* .main_accordion--section {
+    padding-bottom: 20px;
+  } */
+
+
+  .main_accordion {
+    padding: 2em 6em 5em 2.5em;
+    max-width: 22em;
+  }
+
+  .main_accordion--label {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: hsl(238, 29%, 16%);
+    cursor: pointer;
+    transition: color 0.15s;
+    position: relative;
+    letter-spacing: 0.75px;
+    font-size: 0.85rem;
+  }
+
+  .main_accordion--arrow {
+    width: 0.75em;
+    height: 0.5em;
+    transform: rotate(0);
+    transition: all 0.5s ease;
+  }
+
+
+  .main_accordion--label:hover {
+    color: hsl(14, 88%, 65%);
+  }
+
+
+  .main_accordion--arrow:hover {
+    transform: rotate(180);
+  }
+
+
+  .main_accordion--content {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: hsla(238, 29%, 16%, 0.6);
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0em;
+    transition: all 0.5s ease;
+  }
+
+  .main_accordion--input {
+    display: none;
+  }
+
+  .main_accordion--input:checked ~ .main_accordion--content {
+    /* display: block; */
+    max-height: 8em;
+  }
+
+  .main_accordion--input:checked ~ .main_accordion--label {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+  }
+
+  .main_accordion--input:checked + .main_accordion--arrow {
+    transform: rotate(180deg);
+  }
+
+
