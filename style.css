@@ -17,6 +17,7 @@
 
   main {
     background-color: white;
+    position: relative;
     border-radius: 25px;
     display: flex;
     width: 56.5em;
@@ -58,7 +59,7 @@
 .main_pictures--woman {
   position: absolute;
   z-index: 2;
-  margin-left: -110px;
+  margin-left: -100px;
 }
 
 .main_pictures--woman img {
@@ -69,10 +70,17 @@
 .main_pictures--shadow {
   position: absolute;
   z-index: 1;
-  margin-left: -610px;
+  margin-left: -605px;
   margin-top: -145px;
 }
 
+.main_pictures--box {
+  position: absolute;
+  overflow: visible;
+  z-index: 3;
+  margin-left: -93px;
+  margin-top: 205px;
+}
 
 
 /* ACCORDION */
@@ -118,7 +126,7 @@
 
 
   .main_accordion--content {
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     font-size: 0.8rem;
     color: hsla(238, 29%, 16%, 0.6);
     /* display: none; */
