@@ -83,6 +83,10 @@
   margin-top: 205px;
 }
 
+.main_pictures--womanmobile, .main_pictures--shadowmobile {
+  display: none;
+}
+
 
 /* ACCORDION */
 
@@ -142,3 +146,62 @@
   }
 
 
+/* MOBILE */
+
+@media screen and (max-width: 375px) {
+
+    body {
+      min-height: 100vh;
+    }
+
+    main {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 21em;
+      min-height: 34em;
+      margin: 1em ;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    
+
+    .main_pictures--woman, .main_pictures--shadow, .main_pictures--box {
+      display: none;
+    }
+  
+    .main_pictures--mobile {
+      position: relative;
+      width: 15.5em;
+    }
+
+    .main_pictures--womanmobile, .main_pictures--shadowmobile {
+      display: block;
+      overflow: visible;
+    }
+    
+    .main_pictures--womanmobile {
+      width: 15em;
+      position: fixed;
+      top: 3.1em;
+      z-index: 2;    
+    }
+
+    .main_pictures--shadowmobile {
+      position: fixed;
+      top: 9.85em;
+      z-index: 1;    
+    }
+
+    .main_accordion {
+      padding: 8em 1.5em 2.5em 1.5em;    
+    }
+
+    .main_accordion--label {
+       letter-spacing: 0;
+    }
+
+    }
