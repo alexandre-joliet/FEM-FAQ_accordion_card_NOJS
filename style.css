@@ -42,6 +42,7 @@
     margin-bottom: 0;
   }
 
+
 /* IMAGE */
 
 .main_pictures {
@@ -85,11 +86,6 @@
 
 /* ACCORDION */
 
-  /* .main_accordion--section {
-    padding-bottom: 20px;
-  } */
-
-
   .main_accordion {
     padding: 2em 6em 5em 2.5em;
     max-width: 22em;
@@ -98,7 +94,7 @@
   .main_accordion--label {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     color: hsl(238, 29%, 16%);
     cursor: pointer;
     transition: color 0.15s;
@@ -119,17 +115,10 @@
     color: hsl(14, 88%, 65%);
   }
 
-
-  .main_accordion--arrow:hover {
-    transform: rotate(180);
-  }
-
-
   .main_accordion--content {
     line-height: 1.25rem;
     font-size: 0.8rem;
     color: hsla(238, 29%, 16%, 0.6);
-    /* display: none; */
     overflow: hidden;
     max-height: 0em;
     transition: all 0.5s ease;
@@ -140,7 +129,6 @@
   }
 
   .main_accordion--input:checked ~ .main_accordion--content {
-    /* display: block; */
     max-height: 8em;
   }
 
@@ -149,8 +137,8 @@
     font-weight: 700;
   }
 
-  .main_accordion--input:checked + .main_accordion--arrow {
-    transform: rotate(180deg);
+  .main_accordion--input:checked + .main_accordion--label .main_accordion--arrow {
+    transform: rotate(-180deg);
   }
 
 
