@@ -21,7 +21,7 @@
     border-radius: 25px;
     display: flex;
     width: 56.5em;
-    max-height: 31.5em;
+    min-height: 31.5em;
     box-shadow: 0px 50px 100px -50px hsl(238, 29%, 16%);
   }
   
