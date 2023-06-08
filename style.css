@@ -51,14 +51,14 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
+  z-index: 0;
   width: 45em;
   height: auto;
   padding-right: 1em;
  }
 
 .main_pictures--woman {
-  position: absolute;
+  position: relative;
   z-index: 2;
   margin-left: -100px;
 }
@@ -77,10 +77,9 @@
 
 .main_pictures--box {
   position: absolute;
-  overflow: visible;
   z-index: 3;
-  margin-left: -93px;
-  margin-top: 205px;
+  margin-left: -394px;
+  margin-top: 90px;
 }
 
 .main_pictures--womanmobile, .main_pictures--shadowmobile {
