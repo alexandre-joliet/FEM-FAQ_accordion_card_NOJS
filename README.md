@@ -22,8 +22,8 @@
 
 ### Links
 
-- Solution URL: https://github.com/JojoRider/FEM-FAQ_accordion_card_NOJS
-- Live Site URL: https://jojorider.github.io/FEM-FAQ_accordion_card_NOJS/
+- Solution URL: https://github.com/alexandre-joliet/FEM-FAQ_accordion_card_NOJS
+- Live Site URL: https://alexandre-joliet.github.io/FEM-FAQ_accordion_card_NOJS/
 
 ---
 
